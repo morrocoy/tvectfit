@@ -1,17 +1,17 @@
-# Fast Relaxed Vector Fitting for Truncated Signals 
+# Vector Fitting for truncated signals 
 
-The `vectfit` function approximates a response ![fs](https://latex.codecogs.com/gif.latex?\mathbf{f}(s))
-(generally a vector) with a rational function:
+The `vectfit` function approximates a response $\mathbf{f}(s)$ with a rational 
+function:
 
-Test $3x+4$
-![vf](https://latex.codecogs.com/gif.latex?\mathbf{f}(s)&space;\approx&space;\sum_{j=1}^{N}&space;\frac{\mathbf{r}_j}{s-p_j}&space;&plus;&space;\sum_{n=0}^{Nc}&space;\mathbf{c}_n&space;s^{n})
+\begin{equation}
+    \mathbf{f}(s) \approx \sum_{j=1}^{N} \frac{\mathbf{r}_j}{s-p_j} + 
+    \sum_{n=0}^{Nc} \mathbf{c}_n s^{n}
+\end{equation}
 
-where ![pj](https://latex.codecogs.com/gif.latex?p_j) and
-![rj](https://latex.codecogs.com/gif.latex?r_j) are poles and residues in
-the complex plane and ![cn](https://latex.codecogs.com/gif.latex?c_n) are
+where $p_j$ and $r_j$ are poles and residues in the complex plane and $c_n$ are
 the polynomial coefficients.
-When ![fs](https://latex.codecogs.com/gif.latex?\mathbf{f}(s)) is a vector, all
-elements become fitted with a common pole set.
+When $\mathbf{f}(s)$ is a vector, all elements become fitted with a common pole 
+set.
 
 The identification is done using the pole relocating method known as Vector
 Fitting [1] with relaxed non-triviality constraint for faster convergence
@@ -28,3 +28,5 @@ solution of the pole identifion step.
 
 Credits go to Bjorn Gustavsen for his MATLAB implementation.
 (https://www.sintef.no/projectweb/vectorfitting/)
+
+https://github.com/morrocoy/tvectfit.git
