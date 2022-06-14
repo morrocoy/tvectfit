@@ -3,6 +3,7 @@
 The `vectfit` function approximates a response ![fs](https://latex.codecogs.com/gif.latex?\mathbf{f}(s))
 (generally a vector) with a rational function:
 
+Test $3x+4$
 ![vf](https://latex.codecogs.com/gif.latex?\mathbf{f}(s)&space;\approx&space;\sum_{j=1}^{N}&space;\frac{\mathbf{r}_j}{s-p_j}&space;&plus;&space;\sum_{n=0}^{Nc}&space;\mathbf{c}_n&space;s^{n})
 
 where ![pj](https://latex.codecogs.com/gif.latex?p_j) and
